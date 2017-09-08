@@ -1,0 +1,164 @@
+<ion-view view-title="个人中心" hide-nav-bar="true">
+	<style type="text/css">
+		.personal_top_wrap{background: white;}
+	 .personal_news{
+	 	height: 1.43rem;
+	 	padding-top: 0.5rem;
+	 	padding-left: 0.22rem;
+	 	background: #4d3126;
+	 	overflow: hidden;
+	 }
+	 .icon_wrap,.personal_name{
+	 	height: 0.82rem;
+	 	line-height: 0.82rem;
+	 	text-align: center;
+	 	float: left;
+	 }
+	 .icon_wrap{
+	 	width: 0.82rem;
+	 	background: white;
+	 	border-radius: 50%;
+	 }
+	 .personal_name{
+	 	color: white;
+	 	padding-left: 0.3rem;
+	 	font-size: 0.2rem;
+	 }
+    .welcome_lativ{
+    	line-height: 0.36rem;
+    	background: #35221a;
+    	padding-left: 0.23rem;
+    	color: #8b807c;
+    }
+    .myorder{
+    	color: #848484;
+    	font-size: 0.2rem;
+    	height: 0.76rem;
+    	padding: 0 0.3rem 0 0.22rem;
+    	border-bottom: #f3f3f3 1px solid;
+    }
+    .myorder div{
+    	line-height: 0.76rem;
+    	padding: 0;
+    }
+    /*物流*/
+    .logistics{padding: 0;}
+    .logistics div{
+    	color: #787878;
+    	height: 1.24rem;
+    	padding-top: 0.12rem;
+    }
+    /*我的服务*/
+    .myService{
+    	font-size: 0.2rem;
+    	line-height: 0.76rem;
+    	padding: 0 0 0 0.2rem;
+    	border-bottom: 1px solid #f3f3f3;
+    }
+    
+    /*各种功能服务*/
+    .mySer_function{padding: 0;}
+    .mySer_function div{
+    	height: 1.35rem;
+    	padding-top: 0.16rem;
+    }
+    .mySer_funcMid{
+    	border-bottom:1px solid #f3f3f3;
+    	border-top:1px solid #f3f3f3;
+    }
+	</style>
+	<div class="personal_top_wrap">
+		<div class="personal_news">
+			<div class="icon_wrap">
+				<i class="icon ion-person" style="color: #cccccc;font-size: 0.4rem;"></i>
+			</div>
+			<p class="personal_name">alasjdl</p>
+		</div>
+	    <div class="welcome_lativ">亲,欢迎光临 lativ1111</div>
+	    
+	    <div class="row myorder">
+			<div class="col" style="color: #666666;">
+				我的订单
+			</div>
+			<div class="col" style="text-align: right;">
+				查看全部订单&nbsp;&nbsp;
+				<i class="icon ion-chevron-right"></i>
+			</div>
+		</div>
+		<!--物流-->
+		<div class="row logistics text-center">
+			<div class="col">
+				<img src="img/icon/ic_userpay.png"/>
+				<p>待付款</p>
+			</div>
+			<div class="col">
+				<img src="img/icon/ic_usership.png"/>
+				<p>待发货</p>
+			</div>
+			<div class="col">
+				<img src="img/icon/ic_usershipped.png"/>
+				<p>待收货</p>
+			</div>
+			<div class="col">
+				<img src="img/icon/ic_usercomment.png"/>
+				<p>待评价</p>
+			</div>
+			<div class="col">
+				<img src="img/icon/ic_userreturn.png"/>
+				<p>退货/退款</p>
+			</div>
+		</div>
+		<!--间隔-->
+		<div style="height: 0.16rem;background: #f3f3f3;"></div>
+		<!--我的服务-->
+		<div class="row myService">我的服务</div>
+	</div>
+	<!--各种功能服务-->
+	<ion-content style="margin-top: 4.66rem;">
+  		<div class="row mySer_function text-center">
+			<div class="col">
+				<img src="img/icon/ic_userstar.png"/>
+				<p>收藏</p>
+			</div>
+			<div class="col">
+				<img src="img/icon/ic_userstockin.png"/>
+				<p>到货提醒</p>
+			</div>
+			<div class="col">
+				<img src="img/icon/ic_useradd.png"/>
+				<p>地址</p>
+			</div>
+			<div class="col">
+				<img src="img/icon/ic_vieworder.png"/>
+				<p>意见反馈</p>
+			</div>
+		</div>
+		
+		<div class="row mySer_function text-center mySer_funcMid">
+			<div class="col">
+				<img src="img/icon/ic_userabout.png"/>
+				<p>关于诚衣</p>
+			</div>
+			<div class="col">
+				<img src="img/icon/ic_userblog.png"/>
+				<p>品牌日志</p>
+			</div>
+			<div class="col">
+				<img src="img/icon/ic_userservice.png"/>
+				<p>客服信息</p>
+			</div>
+			<div class="col">
+				<img src="img/icon/ic_userhelp.png"/>
+				<p>帮助</p>
+			</div>
+		</div>
+		<div class="row mySer_function text-center">
+			<div class="col col-25">
+				<img src="img/icon/ic_usersetup.png"/>
+				<p>设置</p>
+			</div>
+			
+		</div>
+
+  </ion-content>
+</ion-view>

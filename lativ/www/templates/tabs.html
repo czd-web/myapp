@@ -1,0 +1,68 @@
+<style type="text/css">
+	.tab-item-active{
+		color: #593a37;
+	}
+	.ic_home_on{
+		background: url(img/icon/ic_home_fill.png) no-repeat center center;
+	}
+	.ic_home_off{
+		background: url(img/icon/ic_home_black.png) no-repeat center center;
+	}
+	
+	.ic_nav_on{
+		background: url(img/icon/ic_menu_fill.png) no-repeat center center;
+	}
+	.ic_nav_off{
+		background: url(img/icon/ic_menu_black.png) no-repeat center center;
+	}
+	
+	.ic_infor_on{
+		background: url(img/icon/ic_style_fill.png) no-repeat center center;
+	}
+	.ic_infor_off{
+		background: url(img/icon/ic_style_black.png) no-repeat center center;
+	}
+	
+	.ic_shopp_on{
+		background: url(img/icon/ic_shopping_cart_fill.png) no-repeat center center;
+	}
+	.ic_shopp_off{
+		background: url(img/icon/ic_shopping_cart_black.png) no-repeat center center;
+	}
+	
+	.ic_person_on{
+		background: url(img/icon/ic_person_fill.png) no-repeat center center;
+	}
+	.ic_person_off{
+		background: url(img/icon/ic_person_black.png) no-repeat center center;
+	}
+</style>
+
+<ion-tabs class="tabs-icon-top">
+<!--首页-->
+  <ion-tab title="首页" icon-off="ic_home_off" icon-on="ic_home_on" href="#/tab/home">
+    <ion-nav-view name="tab-home"></ion-nav-view>
+  </ion-tab>
+  
+<!--分类-->
+  <ion-tab title="分类" icon-off="ic_nav_off" icon-on="ic_nav_on" href="#/tab/classification">
+    <ion-nav-view name="tab-classification"></ion-nav-view>
+  </ion-tab>
+  
+<!--消息-->
+  <ion-tab title="穿搭" icon-off="ic_infor_off" icon-on="ic_infor_on" href="#/tab/outfit">
+    <ion-nav-view name="tab-outfit"></ion-nav-view>
+  </ion-tab>
+  
+  <!--购物车-->
+  <ion-tab title="购物车" icon-off="ic_shopp_off" icon-on="ic_shopp_on" href="#/tab/shoppingCart">
+    <ion-nav-view name="tab-shoppingCart"></ion-nav-view>
+  </ion-tab>
+  
+  <!--个人-->
+  <ion-tab title="个人" icon-off="ic_person_off" icon-on="ic_person_on" href="#/tab/personal">
+    <ion-nav-view name="tab-personal"></ion-nav-view>
+  </ion-tab>
+
+
+</ion-tabs>

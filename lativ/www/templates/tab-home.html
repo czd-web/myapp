@@ -1,0 +1,169 @@
+<ion-view view-title="首页" hide-nav-bar="true">
+	<style type="text/css">
+		*{margin: 0;padding: 0;}
+		.news_p{
+			position: relative;
+			top: -6px;
+		}
+		.news_round{
+			color: white;
+			width: 0.18rem;
+			text-align: center;
+			line-height: 0.18rem;
+			background: red;
+			border-radius: 50%;
+			position: absolute;
+			top: 0;
+			right: 0.1rem;
+		}
+		#swiper-containerNav .containerNav_slide{
+			width: 100%;
+			padding-left: 0.14rem;
+		}
+		#swiper-containerNav{
+			width: 100%;
+			height: 0.4rem;
+			overflow: hidden;
+			background: white;
+		}
+		.containerNav_slide div{
+			padding: 0.08rem;
+			margin-right: 0.38rem;
+			width: auto !important;
+			height: 0.4rem;
+		}
+		.active-nav{
+			border-bottom: 2px solid #413a34;
+		}
+		.swiper-containerlunbo img{
+			width: 100%;
+			height: 2.2rem;
+		}
+		.icon_round{
+			width: 0.18rem;
+			line-height: 0.1rem;
+			border-radius: 50%;
+			text-align: center;
+			border: 1px solid black;
+			float: left;
+		}
+		.icon_p{
+			line-height: 0.2rem;
+			padding-left: 0.06rem;
+			font-size: 0.1rem;
+			float: left;
+		}
+		.lunbo-pagination{
+			height: 0.2rem;
+			padding-left: 1.6rem;
+			position: absolute;
+			top: 1.9rem;
+			z-index: 1;
+		}
+		.swiper-pagination-bullet-active{
+			background: #3f4447;
+		}
+		
+	
+		
+	</style>
+	<!--搜索栏-->
+    <div class="item item-input-inset" style="border: none;">
+    	<div>
+    		<img src="img/icon/ic_lativ_logo.png"/>
+    	</div>
+    	<label class="item-input-wrapper" style="height: 48px; margin-left: 20px;">
+    		<img src="img/icon/ic_search.png"/>
+    		<input type="text" placeholder="输入关键字"/>
+    	</label>
+    	<div class="button button-clear" style="padding-top: 20px;padding-left: 0; background: url(img/icon/ic_news_black.png) no-repeat 5px -6px; position: relative;">
+    		<div class="news_round">2</div>
+    		<p class="news_p">消息 </p>
+    	</div>
+    </div>
+     <!--导航栏-->
+    <div class="swiper-container" id="swiper-containerNav">
+		<div class="swiper-wrapper containerNav_slide">
+			<div class="swiper-slide active-nav">首页</div>
+			<div class="swiper-slide">限时特惠</div>
+			<div class="swiper-slide">女装</div>
+			<div class="swiper-slide">男装</div>
+			<div class="swiper-slide">童装</div>
+			<div class="swiper-slide">婴幼儿</div>
+			<div class="swiper-slide">运动</div>
+		</div>
+	</div>
+	
+  <ion-content style="padding-top: 1.3rem;" overflow-scroll='false' >
+    <!--轮播的内容-->
+    <div class="swiper-container" id="swiper-containerCont">
+		<div class="swiper-wrapper">
+			<!--首页-->
+			<div class="swiper-slide">
+				<!--轮播图-->
+		    	<div class="swiper-containerlunbo" style="overflow: hidden;">
+				  <div class="swiper-wrapper">
+				    <div class="swiper-slide"><img src="img/lunbo/17.jpg"/></div>
+				    <div class="swiper-slide"><img src="img/lunbo/22.jpg"/></div>
+				    <div class="swiper-slide"><img src="img/lunbo/66.jpg"/></div>
+				    <div class="swiper-slide"><img src="img/lunbo/17.jpg"/></div>
+				    <div class="swiper-slide"><img src="img/lunbo/8 (67).jpg"/></div>
+				    <div class="swiper-slide"><img src="img/lunbo/17.jpg"/></div>
+				    <div class="swiper-slide"><img src="img/lunbo/8 (23).jpg"/></div>
+				  </div>
+				  <div class="lunbo-pagination"></div>	
+				</div>
+			    
+			    <!--间隔--品牌日志-->
+			    <div class="row">
+			    	<div class="col col-20">
+			    		<img src="img/rizhi.png"/>
+			    	</div>
+			    	<div class="col col-20">
+			    		<img src="img/pinpai.png"/>
+			    	</div>
+			    	<div class="col">
+			    		<img src="img/baoy.png"/>
+			    	</div>
+			    	<div class="col">
+			    		<img src="img/tuih.png"/>
+			    	</div>
+			    </div>
+			    
+			    <!--产品内容-->
+			    <div class="row">
+			    	<div class="col">
+			    		<img src="img/b.png"/>
+			    		<img src="img/r.png"/>
+			    		<img src="img/l.png"/>
+			    		<img src="img/a.png"/>
+			    	</div>
+			    	
+			    	<div class="col">
+			    		<img src="img/r.png"/>
+			    		<img src="img/l.png"/>
+			    		<img src="img/a.png"/>
+			    		<img src="img/r.png"/>
+			    	</div>
+			    </div>
+			</div>
+			<!--限时特惠-->
+			<div class="swiper-slide">
+				
+			
+			</div>
+			<!--女装-->
+			<div class="swiper-slide">女装内容</div>
+			<!--男装-->
+			<div class="swiper-slide">男装内容</div>
+			<!--童装-->
+			<div class="swiper-slide">童装内容</div>
+			<!--婴幼儿-->
+			<div class="swiper-slide">婴幼儿内容</div>
+			<!--运动-->
+			<div class="swiper-slide">运动内容</div>
+		</div>
+	</div>
+  </ion-content>
+</ion-view>
+
